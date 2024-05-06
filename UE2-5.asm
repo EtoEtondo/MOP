@@ -1,0 +1,25 @@
+MOV R0, #14
+MOV R1, #11
+MOV R2, #8
+MOV R3, #12
+
+MOV A, R0
+MOV B, R1
+MUL AB
+MOV B, #2
+DIV AB
+MOV R4, A
+
+MOV A, R2
+MOV B, R3
+MUL AB
+MOV B, #2
+DIV AB
+MOV R5, A
+
+ADD A, R4
+MOV R6, A
+
+CPL A
+MOV P1, A
+end
